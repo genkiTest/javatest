@@ -6,7 +6,7 @@
 package javatest1792;
 
 import java.time.LocalDateTime;
-
+import javatest1792.test.testPackage;
 /**
  *
  * @author genki_desk
@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 public class Movie {
 private String title="title";
 private LocalDateTime publicDay =LocalDateTime.now();
-
+testPackage tp = new testPackage();
     public void setTitle(String title) {
         if(title == null){
             throw new IllegalArgumentException
