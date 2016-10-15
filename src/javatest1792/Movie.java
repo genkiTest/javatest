@@ -14,7 +14,6 @@ import javatest1792.test.testPackage;
 public class Movie {
 private String title="title";
 private LocalDateTime publicDay =LocalDateTime.now();
-testPackage tp = new testPackage();
     public void setTitle(String title) {
         if(title == null){
             throw new IllegalArgumentException

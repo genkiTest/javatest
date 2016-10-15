@@ -17,6 +17,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Rule;
 import org.junit.rules.ExpectedException;
+import javatest1792.test.testPackage;
 /**
  *
  * @author genki_desk
@@ -43,6 +44,13 @@ public class MovieTest {
         mv.setTitle("testTitle");
         LocalDateTime testTime = LocalDateTime.of(2000, 1, 5, 11, 9);
         mv.setPublicDay(testTime);
+    }
+    @Test public void testPackage(){
+        testPackage tep = testPackage.getInstans();
+        tep.log("testLog1");
+        testPackage tep2 = testPackage.getInstans();
+        tep2.log("testLog2");
+        testPackage.fileReder();
     }
   /*  @Test public void nullTest(){
         Movie mv =new Movie();
